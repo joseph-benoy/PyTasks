@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>530</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>800</width>
+    <height>530</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>800</width>
+    <height>530</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <family>Microsoft YaHei UI</family>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>PyTasks</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>images/icons8-task-planning-64.png</normaloff>images/icons8-task-planning-64.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QListWidget" name="UnfinishedList">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>50</y>
+      <width>461</width>
+      <height>381</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Microsoft YaHei UI</family>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="dragEnabled">
+     <bool>true</bool>
+    </property>
+    <property name="dragDropMode">
+     <enum>QAbstractItemView::DragDrop</enum>
+    </property>
+    <property name="defaultDropAction">
+     <enum>Qt::MoveAction</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="UnLabel">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>30</y>
+      <width>131</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Unfinished tasks</string>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="FinishedList">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>50</y>
+      <width>291</width>
+      <height>331</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Microsoft YaHei UI</family>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="dragEnabled">
+     <bool>true</bool>
+    </property>
+    <property name="dragDropMode">
+     <enum>QAbstractItemView::DragDrop</enum>
+    </property>
+    <property name="defaultDropAction">
+     <enum>Qt::MoveAction</enum>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="clearBtn">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>390</y>
+      <width>291</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Clear Finished</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>images/icons8-erase-64.png</normaloff>images/icons8-erase-64.png</iconset>
+    </property>
+   </widget>
+   <widget class="QLabel" name="FLabel">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>30</y>
+      <width>131</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Finished tasks</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="TaskInput">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>460</y>
+      <width>601</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="placeholderText">
+     <string>Enter a new task </string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="AddTask">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>460</y>
+      <width>161</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Add Task</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>images/icons8-plus-24.png</normaloff>images/icons8-plus-24.png</iconset>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
